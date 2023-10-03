@@ -1,0 +1,27 @@
+{
+  "name": "marinehq",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node bin/index.js",
+    "deploy_command": "node bin/deploy-commands.js",
+    "postinstall": "tsc",
+    "lint": "eslint . --ext .ts",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "beta_test": "npx tsc && npm run start"
+  },
+  "engines": {
+    "node": "18.9.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "eslint": "^8.50.0",
+    "prettier": "3.0.3",
+    "prettier-plugin-jsdoc": "^1.0.2",
+    "typescript": "^5.2.2"
+  }
+}
